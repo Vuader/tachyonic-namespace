@@ -59,4 +59,4 @@ directory of the cloned repo:
 .. code:: bash
 
     $ pip install -r requirements-dev.txt
-    $ paver test
+    $ tox
