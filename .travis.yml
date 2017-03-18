@@ -1,9 +1,21 @@
 language: python
 python: 2.7
 env:
+  matrix:
   - TOXENV=py27
-  - TOXENV=py33
 install:
-  - pip install tox
+- pip install tox
 script:
-  - tox
+- tox
+deploy:
+    # test pypi
+  - provider: pypi
+    distributions: sdist
+    server: https://testpypi.python.org/pypi
+    user: "dragonmaster"
+    password:
+      secure: WvVrwLjfTwQlTVojv10P+0mxMWIya1A9G0uUp2BU15EbhIa+ipVaGYSJJ1kjDCyibAtn7h/DBCjwqN5+1DBjoWvklrYYwLUcU44QBu3yZn4v1AK0AZc2tQhJLOa6LnGVDKLrdcgL2bSmXuuhhWs87zbf2yKhy2E5Phoop9fz1rasMNyZueHCfZwY1otxWdA/YXs6EI2fvAUmZfVVbWM5DLmDM55po4l4FwoPaSnp+gETZJ3xy10BHKl+nCjoj7WgF1IQeIOnXDN9xyNRjgVT+dKj/bIyEb9dCnFQtuM47cnsU9cLKAnt2iEd8hSAlJijlkWvYjAyilrF9o7VH61NO/vrh5O7v3l0GIyup+9BuUP/eIThDql/mmxm93PDO5k8h5XANFBW4R7ZOqX3qPFtJBHK6uz58kIaQP2k0mvBlpnmqlbfBIEZfO6hufdWN9cCURtgrMgCKKiE0UxKcMnY/s1/INkXj6s4fNfqN8/57y9+seaS3XH+rbcAdcxt+O99c3idTjjHwV94dkkONIEygB0H9AbvDB9WNiJSvV9VokA1h3BRYMe6yRtIhsjqOjWoIwTv7Ijzl0vMR714oplIXfnhAfYG2eaYkGC2PNUOSEukI6fXg8Nqb2Gj6CBMAgs7dRGorQXSLFRimmTEk4UB5Kt7hHGcjGKFygkPeMwUjMk=
+    on:
+      branch: master
+      tags: true
+      condition: $TRAVIS_PYTHON_VERSION = "2.7"
