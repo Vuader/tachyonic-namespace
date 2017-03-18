@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Tachyon WSGI Framework documentation build configuration file, created by
-# sphinx-quickstart on Sun Mar 12 12:09:07 2017.
+# Tachyonic documentation build configuration file, created by
+# sphinx-quickstart on Sat Mar 18 07:45:34 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -19,7 +19,7 @@
 import os
 import sys
 import sphinx_rtd_theme
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- General configuration ------------------------------------------------
@@ -31,11 +31,9 @@ sys.path.insert(0, os.path.abspath('..'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon'
-]
+extensions = ['sphinx.ext.autodoc',
+              'sphinx.ext.viewcode',
+              'sphinx.ext.napoleon']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -50,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Tachyon WSGI Framework'
+project = u'Tachyonic'
 copyright = u'2017, Christiaan Rademan, Allan Swanepoel, Dave Kruger'
 author = u'Christiaan Rademan, Allan Swanepoel, Dave Kruger'
 
@@ -59,7 +57,7 @@ author = u'Christiaan Rademan, Allan Swanepoel, Dave Kruger'
 # built documents.
 #
 # The short X.Y version.
-version = u'1.0.14'
+version = u'1.0.0'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -106,7 +104,7 @@ html_logo = '_static/img/logo.png'
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'TachyonWSGIFrameworkdoc'
+htmlhelp_basename = 'Tachyonicdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -133,8 +131,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'TachyonWSGIFramework.tex', u'Tachyon WSGI Framework Documentation',
-     u'Christiaan Rademan, Allan Swanepoel, Dave Kruger', 'manual'),
+    (master_doc, 'Tachyonic.tex', u'Tachyonic Documentation',
+     u'a', 'manual'),
 ]
 
 
@@ -143,7 +141,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'tachyonwsgiframework', u'Tachyon WSGI Framework Documentation',
+    (master_doc, 'tachyonic', u'Tachyonic Documentation',
      [author], 1)
 ]
 
@@ -154,7 +152,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'TachyonWSGIFramework', u'Tachyon WSGI Framework Documentation',
-     author, 'TachyonWSGIFramework', 'One line description of project.',
+    (master_doc, 'Tachyonic', u'Tachyonic Documentation',
+     author, 'Tachyonic', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+

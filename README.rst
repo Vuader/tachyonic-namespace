@@ -4,6 +4,11 @@ Tachyonic
 
 .. image:: https://travis-ci.org/TachyonProject/tachyonic.svg?branch=master
     :target: https://travis-ci.org/TachyonProject/tachyonic
+    :alt: Build Status
+
+.. image:: https://readthedocs.org/projects/tachyonic/badge/?version=latest
+    :target: http://tachyonic.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
 Quick Links
 -----------
@@ -54,4 +59,4 @@ directory of the cloned repo:
 .. code:: bash
 
     $ pip install -r requirements-dev.txt
-    $ paver test
+    $ tox

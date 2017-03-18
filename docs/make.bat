@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=source
 set BUILDDIR=build
-set SPHINXPROJ=TachyonWSGIFramework
+set SPHINXPROJ=Tachyonic
 
 if "%1" == "" goto help
 
