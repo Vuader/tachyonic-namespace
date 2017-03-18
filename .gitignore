@@ -39,5 +39,5 @@ pip-log.txt
 
 *~
 .DS_Store
-
+.cache/
 .idea/

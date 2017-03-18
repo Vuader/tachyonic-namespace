@@ -16,6 +16,7 @@ pycodestyle==2.3.1
 
 # Documentation
 Sphinx==1.5.2
+sphinx_rtd_theme
 docutils==0.13.1
 Jinja2==2.9.5
 MarkupSafe==0.23
