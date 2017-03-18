@@ -18,10 +18,10 @@ Contributions and contributors are welcome!
 
     class Books(tachyonic.Resource):
         def __init__(self, app):
-            app.router.add(nfw.HTTP_GET, '/books/{id}', self.view_book)
+            app.router.add(tachyonic.HTTP_GET, '/books/{id}', self.view_book)
 
         def view_book(self, req, resp, id):
-            resp.headers['Content-Type'] = nfw.TEXT_HTML
+            resp.headers['Content-Type'] = tachyonic.TEXT_HTML
             title, book = book(id)
             t = tachyonic.jinja.get_template('myproject/view_book.html')
             resp.body = t.render(title=title, book=book)

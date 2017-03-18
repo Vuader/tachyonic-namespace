@@ -14,7 +14,7 @@ Quick Links
 -----------
 
 * `Website <http://tachyonic.co.za>`__.
-* `Documentation <http://tachyonic-neutrino.readthedocs.io>`__.
+* `Documentation <http://tachyonic.readthedocs.io>`__.
 * `Join mailing list <http://tachyonic.co.za/cgi-bin/mailman/listinfo/tachyon>`__.
 * `Mail List Archives <http://tachyonic.co.za/pipermail/tachyon/>`__.
 
