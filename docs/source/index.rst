@@ -6,43 +6,13 @@
 Welcome to Tachyonic's documentation!
 =====================================
 
-Release v\ |version| (:ref:`Installation <install>`)
+Release v\ |version|
 
-Tachyonic is a flexible Python Web and RestApi application framework for rapid development.
-It's free and open source and before you ask:
-It's BSD Licensed!
+Tachyonic software controls a large pool of services such as cloud, networking, dns, email throughout the infrastructure managed through a dashboard. The goal here is to have a single entry point for managing all services and exposing these services to tenants via one dashboard. Integration with existing authentication database and CRM is done via driver interfaces. Tachyon scale is only dependent on the deployment method used and is designed to scale infinitely. All interfaces such as API endpoints and Dashboard views are fully extendible via plugins/modules. It's all open-source and completely customizable.
 
-Contributions and contributors are welcome!
+Users seeking commercial support for deployment will able to obtain this from any integrator familiar with open-source community.
 
-.. code:: python
-
-    class Books(tachyonic.Resource):
-        def __init__(self, app):
-            app.router.add(tachyonic.HTTP_GET, '/books/{id}', self.view_book)
-
-        def view_book(self, req, resp, id):
-            resp.headers['Content-Type'] = tachyonic.TEXT_HTML
-            title, book = book(id)
-            t = tachyonic.jinja.get_template('myproject/view_book.html')
-            resp.body = t.render(title=title, book=book)
-
-Features
---------
-
-- Routes based on URI templates.
-- Jinja2 templating integration.
-- Simple ORM. (serialized data json import and export)
-- Mariadb/Mysql Pool manager and simple interface
-- Policy/Rules Engine - Access control to resources.
-- Logging Facilities.
-- Loading of resource classes via configuration file.
-
-Useful Links
-------------
-
-- `Tachyonic Home <http://tachyonic.co.za/>`_
-- Tachyonic @ PyPI - Coming Soon
-- `Tachyonic @ GitHub <https://github.com/TachyonProject/tachyonic>`_
+** This documentation is underconstruction, please view individual documentation for projects found on http://www.tachyonic.co.za **
 
 Documentation
 -------------
@@ -51,6 +21,3 @@ Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   user/index
-   api/index
-   community/index
