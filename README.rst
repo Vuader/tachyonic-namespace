@@ -9,6 +9,10 @@ Tachyonic
 .. image:: https://readthedocs.org/projects/tachyonic/badge/?version=latest
     :target: http://tachyonic.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
+    
+.. image:: https://badge.waffle.io/TachyonProject/tachyonic.png?label=ready&title=Ready 
+    :target: https://waffle.io/TachyonProject/tachyonic 
+    :alt: 'Stories in Ready'
 
 Quick Links
 -----------
