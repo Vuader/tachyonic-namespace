@@ -1,18 +1,7 @@
 User Guide
 ==========
 
-.. toctree::
-   :maxdepth: 2
+All the user guides for the individual projects on Tachyonic are availible in there own dedicated documents.
 
-   intro
-   install
-   quickstart
-   settings
-   views
-   middleware
-   error
-   logging
-   respreq
-   templating
-   policy
-   model
+* User Interface: http://tachyonic-ui.readthedocs.io
+* API Interface: http://tachyonic-api.readthedocs.io
