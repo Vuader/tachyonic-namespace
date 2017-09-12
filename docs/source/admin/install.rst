@@ -23,11 +23,11 @@ Using Packages
 
 .. code:: bash
 
-    $ pip install tachyonic.common
-    $ pip install tachyonic.neutrino
-    $ pip install tachyonic.client
-    $ pip install tachyonic.api
-    $ pip install tachyonic.ui
+    $ sudo pip install tachyonic.common
+    $ sudo pip install tachyonic.neutrino
+    $ sudo pip install tachyonic.client
+    $ sudo pip install tachyonic.api
+    $ sudo pip install tachyonic.ui
 
 **or alternatively:**
 
@@ -54,15 +54,15 @@ Using Source
 .. code:: bash
 
     $ cd tachyonic_common
-    $ pip install .
+    $ sudo pip install .
     $ cd ../tachyonic_neutrino
-    $ pip install .
+    $ sudo pip install .
     $ cd ../tachyonic_client
-    $ pip install .
+    $ sudo pip install .
     $ cd ../tachyonic_api
-    $ pip install .
+    $ sudo pip install .
     $ cd ../tachyonic_ui
-    $ pip install .
+    $ sudo pip install .
 
 Or, if you want to edit the code, first fork the main repo, clone the fork
 to your desktop, and then run the following to install it using symbolic
@@ -72,13 +72,13 @@ available to your app without having to reinstall the package:
 .. code:: bash
 
     $ cd tachyonic_common
-    $ pip -e install .
+    $ sudo pip -e install .
     $ cd ../tachyonic_neutrino
-    $ pip -e install .
+    $ sudo pip -e install .
     $ cd ../tachyonic_client
-    $ pip -e install .
+    $ sudo pip -e install .
     $ cd ../tachyonic_api
-    $ pip -e install .
+    $ usod pip -e install .
     $ cd ../tachyonic_ui
-    $ pip -e install .
+    $ sudo pip -e install .
 
