@@ -72,13 +72,13 @@ available to your app without having to reinstall the package:
 .. code:: bash
 
     $ cd tachyonic_common
-    $ sudo pip -e install .
+    $ sudo pip install -e .
     $ cd ../tachyonic_neutrino
-    $ sudo pip -e install .
+    $ sudo pip install -e .
     $ cd ../tachyonic_client
-    $ sudo pip -e install .
+    $ sudo pip install -e .
     $ cd ../tachyonic_api
-    $ usod pip -e install .
+    $ usod pip install -e .
     $ cd ../tachyonic_ui
-    $ sudo pip -e install .
+    $ sudo pip install -e .
 
