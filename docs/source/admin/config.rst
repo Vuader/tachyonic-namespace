@@ -15,9 +15,9 @@ The Mysql/MarioDB Schema can be found in the tachyonic_api source. https://githu
 
 .. code:: mysql
 
-    create database tachyonic
-    grant all on tachyonic.* to tachyonic identified by 'password'
-    flush privileges
+    create database tachyonic;
+    grant all on tachyonic.* to tachyonic identified by 'password';
+    flush privileges;
 
 **Load Database Schema**
 
@@ -32,10 +32,10 @@ Usually applications are installed in /var/www
 
 .. code:: bash
     
-    $ mkdir /var/www/tachyonic_api
-    $ mkdir /var/www/tachyonic_ui
-    $ tachyonic -s tachyonic_api /var/www/tachyonic_api
-    $ tachyonic -s tachyonic_ui /var/www/tachyonic_ui
+    $ sudo mkdir /var/www/tachyonic_api
+    $ sudo mkdir /var/www/tachyonic_ui
+    $ sudo tachyonic -s tachyonic.api /var/www/tachyonic_api
+    $ sudo tachyonic -s tachyonic_ui /var/www/tachyonic_ui
 
 settings.cfg
 ------------
