@@ -23,11 +23,11 @@ Using Packages
 
 .. code:: bash
 
-    $ pip install tachyonic.common
-    $ pip install tachyonic.neutrino
-    $ pip install tachyonic.client
-    $ pip install tachyonic.api
-    $ pip install tachyonic.ui
+    $ sudo pip install tachyonic.common
+    $ sudo pip install tachyonic.neutrino
+    $ sudo pip install tachyonic.client
+    $ sudo pip install tachyonic.api
+    $ sudo pip install tachyonic.ui
 
 **or alternatively:**
 
@@ -43,21 +43,26 @@ Using Source
 
 .. code:: bash
 
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_common.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_neutrino.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_client.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_api.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_ui.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_common.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_neutrino.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_client.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_api.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_ui.git
 
 **Installing source code:**
 
 .. code:: bash
 
-    $ pip install tachyonic_common
-    $ pip install tachyonic_neutrino
-    $ pip install tachyonic_client
-    $ pip install tachyonic_api
-    $ pip install tachyonic_ui
+    $ cd tachyonic_common
+    $ sudo pip install .
+    $ cd ../tachyonic_neutrino
+    $ sudo pip install .
+    $ cd ../tachyonic_client
+    $ sudo pip install .
+    $ cd ../tachyonic_api
+    $ sudo pip install .
+    $ cd ../tachyonic_ui
+    $ sudo pip install .
 
 Or, if you want to edit the code, first fork the main repo, clone the fork
 to your desktop, and then run the following to install it using symbolic
@@ -66,9 +71,14 @@ available to your app without having to reinstall the package:
 
 .. code:: bash
 
-    $ pip -e install tachyonic_common
-    $ pip -e install tachyonic_neutrino
-    $ pip -e install tachyonic_client
-    $ pip -e install tachyonic_api
-    $ pip -e install tachyonic_ui
+    $ cd tachyonic_common
+    $ sudo pip -e install .
+    $ cd ../tachyonic_neutrino
+    $ sudo pip -e install .
+    $ cd ../tachyonic_client
+    $ sudo pip -e install .
+    $ cd ../tachyonic_api
+    $ usod pip -e install .
+    $ cd ../tachyonic_ui
+    $ sudo pip -e install .
 
