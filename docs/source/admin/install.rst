@@ -43,11 +43,11 @@ Using Source
 
 .. code:: bash
 
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_common.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_neutrino.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_client.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_api.git
-    $ git clone -b development clone https://github.com/TachyonProject/tachyonic_ui.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_common.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_neutrino.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_client.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_api.git
+    $ git clone -b development https://github.com/TachyonProject/tachyonic_ui.git
 
 **Installing source code:**
 
