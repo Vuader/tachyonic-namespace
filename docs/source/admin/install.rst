@@ -82,3 +82,24 @@ available to your app without having to reinstall the package:
     $ cd ../tachyonic_ui
     $ sudo pip install -e .
 
+
+Using Docker
+------------
+
+Docker is a quick way to get the latest Tachyonic up and running with no hassle.
+If you have downloaded and installed Docker, simply copy `this Dockerfile
+<https://raw.githubusercontent.com/TachyonicProject/tachyonic_ui/development/tachyonic/ui/resources/Dockerfile>`_ to any
+directory, and from that directory first build your image with:
+
+.. code:: bash
+
+    $ docker build -t tachyonic .
+
+Next run the container, taking note of the port on which you want it to be served.
+
+.. code:: bash
+
+    $ docker run -it -p 80:80 tachyonic
+
+Simply point your browser to http://localhost/ui to get a feel for the base Tachyonic installation.
+
